@@ -1,19 +1,96 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+
 <html>
 
 <head>
-<title>Tytuł strony</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- opis -->
+	<meta name="Moja pierwsza strona internetowa" content="" />
+	<meta name="stronka, ja, brawo!" content="" />
+	<title>Strona internetowa Gosia</title>
+	<!-- href - sciezka do pliku css -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- href - sciezka do ikonki wyswietlajacej sie na pasku -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 </head>
 
 <body>
+	
+	<!-- header znajdzie się logo -->
+	<header>
 
-<header><p>header</p></header>
+	<!-- <div> - służy do utworzenia nowego bloku -->
+		<div class="content">
+		<h1><a href="index.html">Nazwa/Logo</a></h1>
 
-<section><article><p>To jest stronka Gosi. :) </p></article></section>
-<aside><p>aside</p></aside>
+		<!-- <p> - akapit -->
+		<p>Slogan/hasło reklamowe</p>
+		<nav>
+		<ul>
+		<li><a id="currentpage" href="index.html">Start</a></li>
 
-<footer><p>footer</p></footer>
+		<!-- Link do firmy -->
+		<li><a href="o-firmie.html">O firmie</a></li>
+		<li><a href="oferta.html">Oferta</a></li>
+		<li class="last"><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+		</nav>
+		</div>
+	</header>
+
+	<div id="main">
+
+		<div class="content">
+
+			<img src=""images/baner.jpg" alt="" title="" />
+				<div class="text"><h3>Nagłówek opisujący naszą ofertę.</h3>
+				<p>Szczegółowy opis.</p></div>
+
+				<section class="left">
+
+				<article>
+				<h2>O firmie</h2>
+				<p>Szczegółowy opis.</p>
+				<a class="wiecej" href="o-firmie.html">więcej</a>
+				</article>
+				</section>
+
+				<section class="right">
+
+				<article>
+				<h2>Oferta</h2>
+				<p>Szczegółowy opis</p>
+				<a class="wiecej" href="oferta.html">więcej</a>
+				</article>
+				</section>
+
+		</div>
+
+	</div>
+	<img src="images/baner.jpg" alt="opis obrazka" title="tytuł obrazka" />
+
+	<footer>
+
+		<div class="content">
+
+		<ul>
+		<li><strong>Kontakt:</strong> ul. Firmowa 2a, 12-345 Miasto</li>
+		<li class="center"><strong>Telefon:</strong> 12 345-67-89</li>
+		<li><strong>Mail:</strong><a href="mailto:mail@mail.pl">mail@mail.pl</a>
+		</li>
+		</ul>
+
+		<div class="copyright">
+		<p>copyright © 2013 <a href="index.html">nazwa/logo</a></p>
+		</div>
+
+		</div>
+
+	</footer>
+
 
 </body>
 
