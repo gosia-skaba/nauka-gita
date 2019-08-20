@@ -16,7 +16,7 @@ body { background: #ffffff;
 font: 0.876em/2.0em arial, tahoma, verdana, sans-serif; }
 
 
-/* szerokość strony */
+/* SZEROKOŚĆ STRONY */
 body .content { width: 980px; margin: 0 auto; overflow: hidden; }
 
 
@@ -24,14 +24,14 @@ body .content { width: 980px; margin: 0 auto; overflow: hidden; }
 p, a, li { color: #304055; font-size: 1.4em; font-family: arial, tahoma, verdana, sans-serif; }
 
 
-/* header */
+/* STYL DLA HEADER I NAV */
+
 /* pozycjonowanie relatywne */
 /* szary kolor tła */
 /* U dołu na całej szerokości sekcji header obramowanie w kolorze czerwonym. */
 header { position: relative; background: #f9f9f9; border-bottom: 3px solid #e90000; }
 /* zawartość tego bloku wyśrodkujemy */
 header .content { overflow: hidden; text-align: center; }
-
 
 /* nadania stylu dla logo wewnatrz header-a, zwiekszenie czcionki */
 header h1 { position: relative; }
@@ -40,13 +40,16 @@ header h1 { position: relative; }
  text-transform: uppercase sprawia, że wszystkie litery logo będą duże */
 header h1 a { display: block; padding: 10px; margin-top: 10px; font-size: 3.45em; outline: none; clear: both; text-transform: uppercase; text-decoration: none; }
 
-/* Menu: ustalamy deklaracje po kolei dla poszczególnych bloków */
+/* Nav: Menu: ustalamy deklaracje po kolei dla poszczególnych bloków */
 /*Ustawienie float (opływania) przyciski menu pojawią się po lewej stronie względem elementów sąsiadujących.*/
 header nav { clear: both; }
 header nav ul { overflow: hidden; position: relative; list-style: none; float: left; }
 header nav ul li { float: left; }
 header nav ul li a { display: block; padding: 17px 0px 9px 0px; margin-right: 2px; width: 241px; height: 26px; text-align: center; text-decoration: none; outline: none; background: #e0e0e0; }
+/* zmiana tła po najechaniu na przycisk kursorem myszki */
 header nav ul li a:hover { background: #ffffff; }
+
+/*STYL DLA MAIN*/
 
 #main { position: relative; }
 #main .content { margin-bottom: 25px; }
