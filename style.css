@@ -3,21 +3,38 @@
 /* CSS Document */
 
 /* reset marginesów i dopełnień */
-html, body, ul, li { margin: 2; padding: 0; }
+html, body, ul, li 
+{ 
+	margin: 2; 
+	padding: 0; 
+}
 
 
 /* reset wysokości linii i fontu */
-h1, h2, h3, h4, ul, li, ol, p { margin:0; padding:0; font-size: 1em;
-line-height: 2.0em; }
+h1, h2, h3, h4, ul, li, ol, p 
+{ 
+	margin:0; 
+	padding:0; 
+	font-size: 1em;
+	line-height: 2.0em; 
+}
 
 
 /* ustawienia ogólne */
-body { background: #ffffff;
-font: 0.876em/2.0em arial, tahoma, verdana, sans-serif; }
+body 
+{ 
+	background: #ffffff;
+	font: 0.876em/2.0em arial, tahoma, verdana, sans-serif; 
+}
 
 
 /* SZEROKOŚĆ STRONY */
-body .content { width: 980px; margin: 0 auto; overflow: hidden; }
+body .content 
+{ 
+	width: 980px; 
+	margin: 0 auto; 
+	overflow: hidden; 
+}
 
 
 /* wygląd czcionki dla nagłówków - p, linków - a, listy - li. */
@@ -51,30 +68,55 @@ header nav ul li a:hover { background: #ffffff; }
 
 /*STYL DLA MAIN*/
 
+
+/*Pierwszy od góry w centralnej części - main jest baner*/
 #main { position: relative; }
 #main .content { margin-bottom: 25px; }
+
+/* formatowanie dla bloku z klasą text poniżej banera */
 #main .text { padding: 10px 80px 20px 80px; margin: 0px 0px 20px 0px; background: #304055; border: 3px solid #202a38; }
 
+/* nagłówek h3 oraz akapit p w klasie text. 
+Główny element pierwszej strony mający zwrócić uwagę internautów, 
+tekst wyróżnimy większą czcionką oraz nadajemy nowy kolor.*/
 #main .text h3 { color: #e0e0e0; font-weight: 100; font-size: 2.4em; }
 #main .text p { color: #e0e0e0; }
 
-#main .left { float: left; width: 48%; }
-#main .right { float: right; width: 48%; }
-#main section article { overflow: hidden; padding: 20px;
-background: #ffffff; border: 1px solid #e0e0e0; }
 
-#main h2 { margin-bottom: 10px; color: #e90000; font-size: 18px;
-padding: 5px; border: 1px solid #e0e0e0; background: #ffffff;
-
-#main article a.wiecej { margin-top: 10px; font-weight: bold;
-float: right; }
+/* trzy sekcje. Jedna z klasą left, druga z klasą right.
+W każdej z nich znajduje się artykuł z nagłówkiem h2, 
+akapitem p oraz linkiem a z klasą wiecej.*/
+#main .left { float: left; width: 32%; margin-left: 10px; }
+#main .right { float: left; width: 32%; margin-left: 10px; }
+#main .center { float: left; width: 32%; margin-left: 10px; }
+/* formatowania zawartości sekcji - artykułów */
+#main section article { overflow: hidden; padding: 20px; background: #ffffff; border: 1px solid #e0e0e0; }
+/* przypisanie stylu dla nagłówka i linka.*/
+#main h2 { margin-bottom: 10px; color: #e90000; font-size: 18px; padding: 5px; border: 1px solid #e0e0e0; background: #ffffff;}
+#main article a.wiecej { margin-top: 20px; font-weight: bold; float: right; }
 #main article a:hover { text-decoration: none; }
 
-#main h4 { margin-bottom: 30px; color: #304055; font-size: 1.8em; }
 
+
+/* STYL MAIN DLA PODSTRON */
+#main h4 { margin-bottom: 10px; color: #304055; font-size: 1.8em; }
 #main ul { float: left; margin: 13px 0px 12px 15px; }
 #main ul li { text-align: left; padding-left: 10px; }
+#main article a.cofnij { margin-top: 100px; font-weight: bold; float: right; font-size: 1.3em; }
 
+/*STYL DLA FOOTER*/
+footer { position: relative; }
+footer p {font-size: 0.8em;}
 
+/* elementy listy z danymi kontaktowymi */
+footer ul { overflow: hidden; margin: 0px 0px 35px 0px; clear: both; list-style: none; background: #f5f5f5; border: 1px solid #e0e0e0; }
+footer ul li { float: left; padding: 17px 20px 15px 20px; width: 29%; text-align: center; }
 
+/* Dla środkowego elementu listy dodaliśmy klasę center. 
+Będziemy mogli dodać obramowanie tylko dla tego elementu.*/
+footer ul li.left { border-right: 1px solid #e0e0e0; }
+footer ul li.right{ border-left: 1px solid  #e0e0e0; }
+
+footer div.copyright { text-align: center; }
+footer a { font-size: 0.8em;}
 
